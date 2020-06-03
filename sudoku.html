@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kursadarbs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href ="style.css" rel ="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <script src = "try.js"></script> 
+    </head>
+    <body onload="start();">
+        <div class="w3-top w3-hide-small">
+            <div class="w3-bar w3-xlarge w3-black" id="myNavbar">
+            <img src="lotus3.png" alt="lotus pic" style="float:left;width:280px">
+              <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+              <a href="zinas.html" class="w3-bar-item w3-button">DAILY NEWS</a>
+              <a href="receptes.html" class="w3-bar-item w3-button">RECIPES</a>
+              <a href="quote.html" class="w3-bar-item w3-button">QUOTES</a>
+              <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">ENTERTAINMENT <i class="fa fa-caret-down"></i></button>     
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="sudoku.html" class="w3-bar-item w3-button">SUDOKU</a>
+                  <a href="quiz.html" class="w3-bar-item w3-button">QUIZ</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="display-1"style="font-family: Great Vibes, cursive;position:relative; top:30px;;">Solve the puzzle and check if you're right!</h1>
+        <div class="table">
+            <form id="tr">
+                <div class="td" style="position:relative; top:100px; text-align:center;">
+                    <input id="11" name="cell1_1" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="12" name="cell1_2" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="13" name="cell1_3" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="14" name="cell1_4" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="15" name="cell1_5" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="16" name="cell1_6" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="17" name="cell1_7" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="18" name="cell1_8" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="19" name="cell1_9" style="width:40px; height:40px" type="number" min="1" max="9"/> <br>
+                    <input id="21" name="cell2_1" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="22" name="cell2_2" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="23" name="cell2_3" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="24" name="cell2_4" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="25" name="cell2_5" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="26" name="cell2_6" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="27" name="cell2_7" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="28" name="cell2_8" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="29" name="cell2_9" style="width:40px; height:40px" type="number" min="1" max="9"/> <br>
+                    <input id="31" name="cell3_1" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="32" name="cell3_2" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="33" name="cell3_3" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="34" name="cell3_4" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="35" name="cell3_5" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="36" name="cell3_6" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="37" name="cell3_7" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="38" name="cell3_8" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="39" name="cell3_9" style="width:40px; height:40px" type="number" min="1" max="9"/> <br><br>
+                    
+                    <input id="41" name="cell4_1" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="42" name="cell4_2" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="43" name="cell4_3" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="44" name="cell4_4" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="45" name="cell4_5" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="46" name="cell4_6" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="47" name="cell4_7" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="48" name="cell4_8" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="49" name="cell4_9" style="width:40px; height:40px" type="number" min="1" max="9"/> <br>
+                    <input id="51" name="cell5_1" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="52" name="cell5_2" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="53" name="cell5_3" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="54" name="cell5_4" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="55" name="cell5_5" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="56" name="cell5_6" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="57" name="cell5_7" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="58" name="cell5_8" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="59" name="cell5_9" style="width:40px; height:40px" type="number" min="1" max="9"/> <br>
+                    <input id="61" name="cell6_1" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="62" name="cell6_2" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="63" name="cell6_3" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="64" name="cell6_4" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="65" name="cell6_5" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="66" name="cell6_6" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="67" name="cell6_7" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="68" name="cell6_8" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="69" name="cell6_9" style="width:40px; height:40px" type="number" min="1" max="9"/> <br><br>
+
+                    <input id="71" name="cell7_1" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="72" name="cell7_2" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="73" name="cell7_3" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="74" name="cell7_4" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="75" name="cell7_5" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="76" name="cell7_6" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="77" name="cell7_7" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="78" name="cell7_8" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="79" name="cell7_9" style="width:40px; height:40px" type="number" min="1" max="9"/> <br>
+                    <input id="81" name="cell8_1" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="82" name="cell8_2" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="83" name="cell8_3" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="84" name="cell8_4" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="85" name="cell8_5" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="86" name="cell8_6" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="87" name="cell8_7" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="88" name="cell8_8" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="89" name="cell8_9" style="width:40px; height:40px" type="number" min="1" max="9"/> <br>
+                    <input id="91" name="cell9_1" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="92" name="cell9_2" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="93" name="cell9_3" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="94" name="cell9_4" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="95" name="cell9_5" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="96" name="cell9_6" style="width:40px; height:40px" type="number" min="1" max="9"/> &nbsp;
+                    <input id="97" name="cell9_7" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="98" name="cell9_8" style="width:40px; height:40px" type="number" min="1" max="9"/>
+                    <input id="99" name="cell9_9" style="width:40px; height:40px" type="number" min="1" max="9"/> <br><br>
+                    <input id="tasknumber" type="hidden" name="tasknumber">
+                    <button name="submit" onclick="check();">Check!</button>
+                </div>
+            </form>
+        </div>
+                    
+          
+    </body>
+    <footer>
+        <span>
+          <img src="lotus.png" alt="lotus pic" style="float:right;width:200px">
+          <img src="mail.png" alt="lotus pic" style="float:left;width:100px">
+          Contact us:<br>
+          Email: view@gmail.com<br>
+          © 2020 SIA ENTERTAINMENT
+        </span>
+      </footer>
+</html>
